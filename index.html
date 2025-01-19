@@ -19,6 +19,7 @@
     </section>
 
     <div class="site-content">
+        <!-- Search Result Form -->
         <div class="search-result-form-content custom-form hidden">
             <div class="background">
                 <div class="shape"></div>
@@ -46,21 +47,20 @@
                 </div>
             </form>
         </div>
-        <!-- Site Content -->
+
+        <!-- Guest Details Form -->
         <div class="guest-details-form-content custom-form hidden">
-        <div class="search-form-content custom-form">
             <div class="background">
                 <div class="shape"></div>
                 <div class="shape"></div>
             </div>
             <form>
                 <h3>Personal Information</h3>
-
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
 
-                <label for="phone-number">Phone Number:</label>
-                <input type="number" id="phone-number" name="phone-number">
+                <label for="guest-phone-number">Phone Number:</label>
+                <input type="number" id="guest-phone-number" name="phone-number">
 
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
@@ -70,9 +70,12 @@
                     <button id="guest-details-next-btn">Next</button>
                 </div>
             </form>
-        </div>  
-                <h3>Search Here</h3>
+        </div>
 
+        <!-- Search Form -->
+        <div class="search-form-content custom-form">
+            <h3>Search Here</h3>
+            <form>
                 <label for="check-in">Check-in:</label>
                 <input type="date" id="check-in" name="check-in">
 
@@ -80,12 +83,13 @@
                 <input type="date" id="check-out" name="check-out">
 
                 <label for="people">Numbers of people:</label>
-                <input type="number" min="1" id="people" name="phone-number">
+                <input type="number" min="1" id="people" name="people">
 
                 <button id="search-form-button">Next</button>
             </form>
         </div>
-        <!-- Thank you, page! -->
+
+        <!-- Thank You Page -->
         <div class="thank-you-content custom-form">
             <div class="background">
                 <div class="shape"></div>
@@ -97,6 +101,7 @@
             </form>
         </div>
 
+        <!-- Confirm Reservation -->
         <div class="confirm-reservation-content custom-form hidden">
             <div class="background">
                 <div class="shape"></div>
@@ -106,26 +111,20 @@
                 <h3>Confirm Reservation</h3>
                 <article class="confirm-reservation">
                     <h4 id="guest-name">Name: Demo-User</h4>
-                    <br />
                     <h4 id="guest-phone">Phone Number: 09939393939</h4>
-                    <br />
                     <h4 id="guest-email">Email: demo@gmail.com</h4>
-                    <br />
                     <h4 id="guest-room-type">Room Type: Family Room</h4>
-                    <br />
                     <h4 id="guest-data-in">Date-in: 26-11-29</h4>
-                    <br />
                     <h4 id="guest-data-out">Date-out: 28-11-29</h4>
                 </article>
                 <div class="buttons">
                     <button id="confirm-back-btn">Back</button>
                     <button id="confirm-reservation">Confirm</button>
                 </div>
-        
             </form>
         </div>
-        
     </div>
+
     <script src="solution.js"></script>
 </body>
 
