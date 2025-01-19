@@ -206,14 +206,12 @@ button:hover {
 
 .shape:first-child {
     background: linear-gradient(#36251b, #7c4f30);
-;
     left: -80px;
     top: -80px;
 }
 
 .shape:last-child {
     background: linear-gradient(to right, #daa022, #f09819);
-;
     right: -30px;
     bottom: -80px;
 }
@@ -285,4 +283,16 @@ button {
 
 button:hover {
     box-shadow: 1px 1px 11px 8px #e7a83a;
+}
+
+.site-content {
+    height: 70%;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    margin: 20px;
 }
