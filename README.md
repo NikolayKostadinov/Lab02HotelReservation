@@ -5,5 +5,4 @@
   - Николай Костадинов - NikolayKostadinov - takes the role “Member 1”.
   - Ивайло Борисов - IvayloBorisov takes the role “Member 2”.
   - Михаил Петров - mpetrov08 takes the role “Member 3”.
-  - Грета Ямачева - yamachevaGreta takes the role “Member 4”.
-  - Алекс Миленков - AlexMilenkov1 takes the role "Member 5". - Change documentation in this file!
+  - Алекс Миленков - yamachevaGreta takes the role “Member 4”.
