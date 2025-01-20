@@ -18,7 +18,7 @@ function changeContent(className) {
 
 document.querySelector('#new-reservation').addEventListener('click', (e) => cleanData(e));
 
-function cleanData(e) {
+function cleanData() {
     changeContent('search-form-content');
 }
 
@@ -29,8 +29,15 @@ function fillRoomForm(e) {
     changeContent('search-result-form-content');
 }
 
-document.querySelector('#guest-details-next-btn').addEventListener('click', (e) => getPersonalData(e));
 
+document.querySelector('#confirm-reservation').addEventListener('click', (e) => showThanksPage(e));
+
+function showThanksPage(e) {
+    e.preventDefault();
+    changeContent('thank-you-content');
+}
+
+document.querySelector('#guest-details-next-btn').addEventListener('click', (e) => getPersonalData(e));
 function getPersonalData(e) {
     e.preventDefault();
     const data = e.target.parentElement.parentElement;
@@ -39,7 +46,7 @@ function getPersonalData(e) {
     const phone = data.querySelector('#phone-number').value;
     const email = data.querySelector('#email').value;
 
-    if (name != '' && phone != '' && email != '') {
+    if (name !== '' && phone !== '' && email !== '') {
         reservation.name = name;
         reservation.phone = phone;
         reservation.email = email;
@@ -78,20 +85,11 @@ function searchFormData(e) {
     }
 }
 
-
 document.querySelector('#confirm-back-btn').addEventListener('click', (e) => getBackToPersonalData(e));
 
 function getBackToPersonalData(e) {
     e.preventDefault();
     changeContent('guest-details-form-content');
-}
-
-
-document.querySelector('#confirm-reservation').addEventListener('click', (e) => showThanksPage(e));
-
-function showThanksPage(e) {
-    e.preventDefault();
-    changeContent('thank-you-content');
 }
 
 
@@ -111,8 +109,8 @@ document.querySelectorAll('.room-type').forEach(room => {
 });
 
 function selectRoomType(e) {
-    let myTarget = undefined;
-    e.preventDefault;
+    let myTarget;
+    e.preventDefault();
     if (e.target.querySelector('img') != null) {
         myTarget = e.target;
     } else {
@@ -127,10 +125,7 @@ document.querySelector('#search-next-btn').addEventListener('click', (e) => find
 
 function findRoom(e) {
     e.preventDefault();
-    const roomInfo = e.target.parentElement.parentElement.querySelector('.selected-room h4').textContent;
-    reservation.roomType = roomInfo;
+    reservation.roomType = e.target.parentElement.parentElement.querySelector('.selected-room h4').textContent;
     console.log(reservation);
     changeContent('guest-details-form-content');
-
 }
-
