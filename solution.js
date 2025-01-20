@@ -1,18 +1,18 @@
 let reservation =
-{
-    startDate: null,
-    endDate: null,
-    guestsCount: 0,
-    roomType: null,
-    name: null,
-    phone: null,
-    email: null
-}
+    {
+        startDate: null,
+        endDate: null,
+        guestsCount: 0,
+        roomType: null,
+        name: null,
+        phone: null,
+        email: null
+    }
 
 function changeContent(className) {
     document.querySelectorAll('.custom-form').forEach(div => div.classList.add('hidden'));
-    if( document.querySelector(`.${className}`) != null){
-    document.querySelector(`.${className}`).classList.remove('hidden');
+    if (document.querySelector(`.${className}`) != null) {
+        document.querySelector(`.${className}`).classList.remove('hidden');
     }
 }
 
@@ -38,6 +38,7 @@ function showThanksPage(e) {
 }
 
 document.querySelector('#guest-details-next-btn').addEventListener('click', (e) => getPersonalData(e));
+
 function getPersonalData(e) {
     e.preventDefault();
     const data = e.target.parentElement.parentElement;
@@ -92,7 +93,6 @@ function getBackToPersonalData(e) {
     changeContent('guest-details-form-content');
 }
 
-
 document.querySelector('#search-back-btn').addEventListener('click', (e) => fillSearchForm(e));
 
 function fillSearchForm(e) {
@@ -102,7 +102,6 @@ function fillSearchForm(e) {
     document.querySelector('#check-out').value = reservation.endDate;
     document.querySelector('#people').value = reservation.guestsCount;
 }
-
 
 document.querySelectorAll('.room-type').forEach(room => {
     room.addEventListener("click", (e) => selectRoomType(e))
