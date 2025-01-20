@@ -32,7 +32,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-#welcome>h1 {
+#welcome > h1 {
     text-align: center;
     font-family: 'Passions Conflict', cursive;
     font-size: 5rem;
@@ -62,7 +62,7 @@ body {
 
 }
 
-.info>h1 {
+.info > h1 {
     font-size: 2rem;
     margin: -10.3rem 0 0px;
     position: relative;
@@ -99,15 +99,13 @@ body {
 }
 
 .shape:first-child {
-    background: linear-gradient(#36251b, #7c4f30);
-    ;
+    background: linear-gradient(#36251b, #7c4f30);;
     left: -80px;
     top: -80px;
 }
 
 .shape:last-child {
-    background: linear-gradient(to right, #daa022, #f09819);
-    ;
+    background: linear-gradient(to right, #daa022, #f09819);;
     right: -30px;
     bottom: -80px;
 }
@@ -164,7 +162,6 @@ button:hover {
 }
 
 
-
 .site-content {
     height: 70%;
 }
@@ -181,7 +178,7 @@ button:hover {
     display: none;
 }
 
-.selected-room{
+.selected-room {
     background-color: #cfcbca;
 }
 
@@ -295,17 +292,11 @@ button:hover {
 }
 
 .offers {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: space-around;
-
     height: 77%;
-
 }
 
 .offer-card {
@@ -340,7 +331,6 @@ button:hover {
     justify-content: center;
 }
 
-
 .offer-card {
     display: flex;
     align-items: center;
@@ -364,6 +354,6 @@ button:hover {
     margin-right: 20px;
 }
 
-.selected-room{
+.selected-room {
     background-color: #cfcbca !important;
 }
